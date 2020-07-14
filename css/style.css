@@ -1,5 +1,29 @@
+@font-face {
+  font-family: "Lustria";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lustria-v7-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Lustria"), local("Lustria-Regular"),
+    url("../fonts/lustria-v7-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lustria-v7-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lustria-v7-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lustria-v7-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/lustria-v7-latin-regular.svg#Lustria") format("svg"); /* Legacy iOS */
+}
+
+html {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 body {
   margin: 0;
+  height: 1500px;
+  line-height: 1.80857;
 }
 
 a,
@@ -12,8 +36,51 @@ a:active {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
 }
 
 li {
   display: inline;
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.nav-box {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-logo {
+  padding: 5px 0;
+}
+
+.nav-logo img {
+  width: auto;
+  height: 43px;
+}
+.nav-menu {
+  margin-left: auto;
+  text-transform: uppercase;
+}
+.nav-menu a {
+  box-sizing: border-box;
+  padding: 10px 8px;
+  color: #575089;
+
+  letter-spacing: 1px;
+}
+
+.nav-menu a:hover {
+  background-color: #241c65;
+  color: white;
 }
