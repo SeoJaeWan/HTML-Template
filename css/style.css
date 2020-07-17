@@ -15,6 +15,7 @@
       url("../fonts/lustria-v7-latin-regular.svg#Lustria") format("svg"); /* Legacy iOS */
 }
 * {
+  font-family: Lustria, serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -92,4 +93,42 @@ li {
 .nav-menu a:hover {
   background-color: #241c65;
   color: white;
+}
+
+.content-container {
+  padding-top: 70px;
+}
+
+.About {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.About-message {
+  width: 540px;
+  padding: 0 14px;
+  margin-left: 65px;
+}
+
+.About-message > h1 {
+  font-size: 38px;
+}
+
+.About-message > p {
+  margin-bottom: 20px;
+  color: #999999;
+}
+
+.About-img {
+  width: 540px;
+  height: 360px;
+}
+
+.About-img > img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px;
 }
