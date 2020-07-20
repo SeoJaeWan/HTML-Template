@@ -68,9 +68,11 @@ button {
   position: relative;
 
   width: 208px;
-  height: 50px;
+  height: 56px;
 
   border-radius: 10px;
+
+  margin: 20px 0;
 
   color: #ffffff;
   background-color: #57606f;
@@ -176,20 +178,29 @@ button {
 .about {
   display: flex;
 
+  width: 85%;
   padding-top: 65px;
+  margin: 0 auto;
 
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row-reverse;
 }
 
 .about-message {
-  width: 50%;
+  width: 47%;
   padding: 0 14px;
-  margin-left: 65px;
+  margin-left: 45px;
 }
 
-.about-message > h1 {
+.about-message > h2 {
   font-size: 38px;
+  font-weight: 300;
+
+  line-height: 120%;
+
+  color: #333333;
+
+  padding-bottom: 10px;
 }
 
 .about-message > p {
