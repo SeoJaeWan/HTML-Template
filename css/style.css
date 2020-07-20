@@ -60,7 +60,10 @@ button {
   width: 208px;
   height: 50px;
 
-  color: #fff;
+  border-radius: 10px;
+
+  color: #ffffff;
+  background-color: #57606f;
 }
 
 .animate-button > span {
@@ -102,7 +105,7 @@ button {
 }
 
 .nav-box {
-  width: 70%;
+  width: 63%;
 
   display: flex;
 
@@ -128,6 +131,7 @@ button {
   margin-left: auto;
   text-transform: uppercase;
 }
+
 .nav-menu a {
   display: inline-block;
 
@@ -206,7 +210,7 @@ button {
   height: 100%;
 
   border-radius: 10px;
-  border: 3px solid #241c65;
+  border: 3px solid #57606f;
 }
 
 .about-img > img {
