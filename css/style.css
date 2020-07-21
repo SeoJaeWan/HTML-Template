@@ -64,6 +64,14 @@ button {
   background-color: #fff;
 }
 
+p {
+  color: #999999;
+}
+
+article:nth-child(2n + 1) {
+  background-color: #f2f3f5;
+}
+
 .animate-button {
   position: relative;
 
@@ -103,6 +111,11 @@ button {
 .animate-button:hover::before {
   border-radius: 10px;
   width: 100%;
+}
+
+.sub-title {
+  font-size: 38px;
+  padding-bottom: 25px;
 }
 
 .nav-container {
@@ -171,16 +184,25 @@ button {
   padding-top: 70px;
 }
 
-.banner {
+article {
   padding-top: 40px;
+  width: 85%;
+
+  margin: 0 auto;
+}
+
+.article-title {
+  padding-bottom: 60px;
+}
+
+.article-title > p {
+  font-size: 18px;
 }
 
 .about {
   display: flex;
 
-  width: 85%;
   padding-top: 65px;
-  margin: 0 auto;
 
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -193,7 +215,6 @@ button {
 }
 
 .about-message > h2 {
-  font-size: 38px;
   font-weight: 300;
 
   line-height: 120%;
@@ -205,7 +226,6 @@ button {
 
 .about-message > p {
   margin-bottom: 20px;
-  color: #999999;
 }
 
 .about-img {
@@ -248,4 +268,9 @@ button {
   z-index: 2;
 
   border-radius: 10px;
+}
+
+.services {
+  padding-top: 65px;
+  text-align: center;
 }
