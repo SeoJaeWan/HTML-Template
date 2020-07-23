@@ -18,9 +18,11 @@
 @keyframes navEvent {
   0% {
     transform: scaleY(0.2);
+    color: #241c65;
   }
 
   100% {
+    color: #fff;
     transform: scaleY(1);
   }
 }
@@ -68,7 +70,12 @@ p {
   color: #999999;
 }
 
-article:nth-child(2n + 1) {
+article {
+  width: 100%;
+  padding: 70px 0;
+}
+
+article:nth-child(2n) {
   background-color: #f2f3f5;
 }
 
@@ -115,6 +122,13 @@ article:nth-child(2n + 1) {
 .sub-title {
   font-size: 38px;
   padding-bottom: 25px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
 }
 
 .nav-container {
@@ -170,35 +184,24 @@ article:nth-child(2n + 1) {
 
 .nav-menu-item:hover a {
   background-color: #241c65;
-  color: white;
+  color: #fff;
 
   animation-name: navEvent;
-  animation-duration: 0.5s;
-}
-
-.content-container {
-  width: 100%;
-
-  margin: 0 auto;
-  padding-top: 70px;
-}
-
-article {
-  width: 100%;
-  padding-top: 40px;
-}
-
-.article-title {
-  padding-bottom: 60px;
-}
-
-.article-title > p {
-  font-size: 18px;
+  animation-duration: 0.3s;
 }
 
 .content-box {
   margin: 0 auto;
   width: 60%;
+}
+
+.article-title {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.article-title > p {
+  font-size: 18px;
 }
 
 .about {
@@ -278,12 +281,6 @@ button.hover-animation {
 
 .services {
   padding-top: 65px;
-  text-align: center;
-}
-
-.services-box {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .services-box-item {
@@ -291,8 +288,6 @@ button.hover-animation {
   height: 285px;
 
   padding: 15px;
-
-  text-align: left;
 }
 
 .services-box-item > i {
@@ -327,4 +322,35 @@ button.hover-animation {
   color: #fff;
 
   margin-bottom: 16px;
+}
+
+.portfolio-content {
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.portfolio-content > button {
+  padding: 12px 40px;
+  font-size: 14px;
+
+  margin-bottom: 20px;
+}
+
+.portfolio-content > button:focus {
+  background-color: #241c65;
+  color: #fff;
+}
+
+.portfolio-item {
+  width: 30%;
+}
+
+.portfolio-item-img {
+  width: 100%;
+  height: auto;
+
+  margin: 20px 0;
+
+  border: 2px solid #241c65;
 }
