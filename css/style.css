@@ -27,13 +27,18 @@
   }
 }
 
+/* 
+  /////////////////////////////////////////////////////////////
+          기본 설정
+  /////////////////////////////////////////////////////////////
+*/
+
 * {
   font-family: Lustria, serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-html {
+
   font-size: 14px;
   font-weight: 400;
 }
@@ -79,6 +84,12 @@ article:nth-child(2n) {
   background-color: #f2f3f5;
 }
 
+/* 
+  //////////////////////////////////////////////////////
+      공통 CSS
+  //////////////////////////////////////////////////////
+*/
+
 .hover-animation {
   position: relative;
 
@@ -86,7 +97,7 @@ article:nth-child(2n) {
 
   margin: 20px 0;
 
-  color: #ffffff;
+  color: #fff;
   background-color: #57606f;
 }
 
@@ -119,6 +130,20 @@ article:nth-child(2n) {
   width: 100%;
 }
 
+.content-box {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.article-title {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.article-title > p {
+  font-size: 18px;
+}
+
 .sub-title {
   font-size: 38px;
   padding-bottom: 25px;
@@ -130,6 +155,12 @@ article:nth-child(2n) {
 
   justify-content: space-between;
 }
+
+/* 
+  /////////////////////////////////////////////
+      Nav 
+  /////////////////////////////////////////////
+*/
 
 .nav-container {
   position: fixed;
@@ -190,19 +221,11 @@ article:nth-child(2n) {
   animation-duration: 0.3s;
 }
 
-.content-box {
-  margin: 0 auto;
-  width: 60%;
-}
-
-.article-title {
-  padding-bottom: 60px;
-  text-align: center;
-}
-
-.article-title > p {
-  font-size: 18px;
-}
+/* 
+  /////////////////////////////////////////////
+      About
+  /////////////////////////////////////////////
+*/
 
 .about {
   display: flex;
@@ -279,6 +302,12 @@ button.hover-animation {
   height: 56px;
 }
 
+/* 
+  /////////////////////////////////////////////
+      Service
+  /////////////////////////////////////////////
+*/
+
 .services {
   padding-top: 65px;
 }
@@ -324,6 +353,12 @@ button.hover-animation {
   margin-bottom: 16px;
 }
 
+/* 
+  /////////////////////////////////////////////
+      Portfolio
+  /////////////////////////////////////////////
+*/
+
 .portfolio-content {
   margin: 0 auto;
 
@@ -344,6 +379,40 @@ button.hover-animation {
 
 .portfolio-item {
   width: 30%;
+  position: relative;
+}
+
+.portfolio-item-cover {
+  width: 80%;
+  height: 75%;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -40%);
+
+  opacity: 0;
+
+  transition: all 0.5s;
+  background-color: #fff;
+}
+
+.portfolio-item-cover > button {
+  margin-top: 50%;
+  padding: 5px 10px;
+
+  background-color: #241c65;
+  color: #fff;
+
+  transform: translateY(-80%);
+}
+
+.portfolio-item:hover .portfolio-item-cover {
+  opacity: 0.8;
+
+  transform: translate(-50%, -52.5%);
 }
 
 .portfolio-item-img {
