@@ -382,6 +382,17 @@ button.hover-animation {
   position: relative;
 }
 
+.portfolio-item-img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  margin: 20px 0;
+
+  border: 2px solid #241c65;
+}
+
 .portfolio-item-cover {
   width: 80%;
   height: 75%;
@@ -391,7 +402,7 @@ button.hover-animation {
   top: 50%;
   left: 50%;
 
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -10%);
 
   opacity: 0;
 
@@ -399,27 +410,27 @@ button.hover-animation {
   background-color: #fff;
 }
 
+.portfolio-item:hover .portfolio-item-cover {
+  opacity: 0.8;
+
+  transform: translate(-50%, -50%);
+}
+
 .portfolio-item-cover > button {
-  margin-top: 50%;
   padding: 5px 10px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
   background-color: #241c65;
   color: #fff;
 
-  transform: translateY(-80%);
+  transform: translate(-50%, -50%);
 }
 
-.portfolio-item:hover .portfolio-item-cover {
-  opacity: 0.8;
-
-  transform: translate(-50%, -52.5%);
-}
-
-.portfolio-item-img {
-  width: 100%;
-  height: auto;
-
-  margin: 20px 0;
-
-  border: 2px solid #241c65;
-}
+/* 
+  ///////////////////////////////////////////
+      Testimonials
+  ///////////////////////////////////////////
+*/
