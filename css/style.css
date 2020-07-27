@@ -84,76 +84,8 @@ article:nth-child(2n) {
   background-color: #f2f3f5;
 }
 
-/* 
-  //////////////////////////////////////////////////////
-      공통 CSS
-  //////////////////////////////////////////////////////
-*/
-
-.hover-animation {
-  position: relative;
-
-  border-radius: 10px;
-
-  margin: 20px 0;
-
-  color: #fff;
-  background-color: #57606f;
-}
-
-.hover-animation > span {
-  position: relative;
-
-  font-size: 20px;
-
-  z-index: 3;
-}
-
-.hover-animation::before {
-  content: "";
-
-  z-index: 1;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  transition: all 0.85s cubic-bezier(0.68, -0.8, 0.27, 1.55);
-  background-color: #241c65;
-  border-radius: 10px 0 0 10px;
-  width: 50%;
-  height: 100%;
-}
-
-.hover-animation:hover::before {
-  border-radius: 10px;
-  width: 100%;
-}
-
-.content-box {
-  margin: 0 auto;
-  width: 60%;
-}
-
-.article-title {
-  padding-bottom: 60px;
-  text-align: center;
-}
-
-.article-title > p {
-  font-size: 18px;
-}
-
-.sub-title {
-  font-size: 38px;
-  padding-bottom: 25px;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
+i.fas{
+    line-height: 90%;
 }
 
 /* 
@@ -434,3 +366,157 @@ button.hover-animation {
       Testimonials
   ///////////////////////////////////////////
 */
+
+.testimonials-profile {
+
+  flex-direction: column;
+  align-items: center;
+    
+  display: none;
+}
+
+.testimonials-profile-img {
+  width: 55px;
+  height: 55px;
+
+  display: block;
+}
+
+.testimonials-profile-name {
+  font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.testimonials-profile-name > small {
+  display: block;
+
+  font-size: 16px;
+  color: #aaaaaa;
+
+  line-height: 120%;
+}
+
+.testimonials-profile-content {
+  width: 100%;
+    
+    padding: 30px;
+    
+  color: #fff;
+  background-color: #241c65;
+    
+    text-align: center;
+}
+
+.testimonials-profile-content > blockquote {
+    font-size: 20px;
+    font-weight: bolder;
+    
+    margin-bottom: 20px;
+}
+
+.testimonials-profile-content > p {
+    font-size: 16px;
+    color:#A8A8A9;
+}
+
+.testimonials-buttons{
+    width: 10%;
+    
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 30px auto 0;
+}
+
+.testimonials-buttons-item{
+    width: 60px;
+    height: 60px;
+    
+    background-color: #171717;
+    color : #fff;
+    
+    text-align: center;
+}
+
+.testimonials-buttons-item:hover{
+
+    
+    background-color: #241c65;
+}
+
+/* 
+  //////////////////////////////////////////////////////
+      공통 CSS
+  //////////////////////////////////////////////////////
+*/
+
+.hover-animation {
+  position: relative;
+
+  border-radius: 10px;
+
+  margin: 20px 0;
+
+  color: #fff;
+  background-color: #57606f;
+}
+
+.hover-animation > span {
+  position: relative;
+
+  font-size: 20px;
+
+  z-index: 3;
+}
+
+.hover-animation::before {
+  content: "";
+
+  z-index: 1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: all 0.85s cubic-bezier(0.68, -0.8, 0.27, 1.55);
+  background-color: #241c65;
+  border-radius: 10px 0 0 10px;
+  width: 50%;
+  height: 100%;
+}
+
+.hover-animation:hover::before {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.content-box {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.article-title {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.article-title > p {
+  font-size: 18px;
+}
+
+.sub-title {
+  font-size: 38px;
+  padding-bottom: 25px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.active {
+      display: flex;
+}
