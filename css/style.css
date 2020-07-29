@@ -389,13 +389,10 @@ button.hover-animation {
 */
 
 .testimonials-box{
-    width: 5400px;
+    width: 500%;
     height: 273px;
 
-/*    overflow: hidden;*/
-    transform: translateX(-1080px);
-    
-    margin: 0 auto;
+    transform: translateX(20%);
     
     transition: all 0.5s;
 }
@@ -406,8 +403,7 @@ button.hover-animation {
     clear: both;
 }
 
-.testimonials-profile {
-    
+.testimonials-profile {   
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -416,11 +412,11 @@ button.hover-animation {
     
     opacity: 0;
     
-    width: 1080px;
+    width: 20%;
     height: 275px;
 
-       
- 
+    padding:0 10px;
+
     transition: all 0.25s;
 }
 
@@ -713,6 +709,8 @@ button.hover-animation {
 .content-box {
     margin: 0 auto;
     width: 65%;
+    
+    overflow: hidden;
 }
 
 .article-title {
