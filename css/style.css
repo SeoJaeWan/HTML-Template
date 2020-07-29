@@ -392,7 +392,7 @@ button.hover-animation {
     width: 500%;
     height: 273px;
 
-    transform: translateX(20%);
+    transform: translateX(-20%);
     
     transition: all 0.5s;
 }
@@ -417,7 +417,7 @@ button.hover-animation {
 
     padding:0 10px;
 
-    transition: all 0.25s;
+    transition: all 0.5s;
 }
 
 .testimonials-profile-img {
