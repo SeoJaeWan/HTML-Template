@@ -388,12 +388,40 @@ button.hover-animation {
   ///////////////////////////////////////////
 */
 
+.testimonials-box{
+    width: 5400px;
+    height: 273px;
+
+/*    overflow: hidden;*/
+    transform: translateX(-1080px);
+    
+    margin: 0 auto;
+    
+    transition: all 0.5s;
+}
+
+.testimonials-box{
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .testimonials-profile {
-
-    flex-direction: column;
+    
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    
+    float:left;
+    
+    opacity: 0;
+    
+    width: 1080px;
+    height: 275px;
 
-    display: none;
+       
+ 
+    transition: all 0.25s;
 }
 
 .testimonials-profile-img {
@@ -709,5 +737,5 @@ button.hover-animation {
 }
 
 .active {
-    display: flex;
+     opacity: 1;
 }
