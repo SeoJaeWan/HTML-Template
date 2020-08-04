@@ -281,9 +281,28 @@ article:nth-child(2n) {
   transform: scale(0);
 }
 
-.banner-text a {
+.banner-text-item,
+.banner-text-opacity {
   color: #fff;
   font-size: 18px;
+}
+
+.banner-text-opacity {
+  opacity: 1;
+
+  position: absolute;
+
+  display: inline-block;
+
+  top: -1;
+  left: 0;
+
+  width: 0px;
+  height: 32px;
+
+  overflow: hidden;
+
+  transition: all 7s;
 }
 
 .banner-first {
@@ -879,8 +898,10 @@ button.hover-animation {
   opacity: 1;
 }
 
-.abled {
+.half-active {
+  opacity: 0.5;
 }
 
-.disabled {
+.change-width {
+  width: 100%;
 }

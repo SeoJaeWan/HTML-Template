@@ -19,27 +19,39 @@
         </a>
 
         <ul class="nav-menu">
-          <li class="nav-menu-item"><a href="#">Home</a></li>
-          <li class="nav-menu-item"><a href="#ABOUTUS">About us</a></li>
-          <li class="nav-menu-item"><a href="#SERVICES">Services</a></li>
-          <li class="nav-menu-item"><a href="#PORTFOLIO">Portfolio</a></li>
           <li class="nav-menu-item">
-            <a href="#TESTIMONIALS">Testimonials</a>
+            <button type="button" onclick="href_scroll('#BANNER')">Home</button>
           </li>
-          <li class="nav-menu-item"><a href="#BLOG">Blog</a></li>
-          <li class="nav-menu-item"><a href="#CONTACTUS">Contact us</a></li>
+          <li class="nav-menu-item">
+            <button type="button" onclick="href_scroll('#ABOUTUS')">About us</button>
+          </li>
+          <li class="nav-menu-item">
+            <button type="button" onclick="href_scroll('#SERVICES')">Services</button>
+          </li>
+          <li class="nav-menu-item">
+            <button type="button" onclick="href_scroll('#PORTFOLIO')">Portfolio</button>
+          </li>
+          <li class="nav-menu-item">
+            <button type="button" onclick="href_scroll('#TESTIMONIALS')">Testimonials</a>
+          </li>
+          <li class="nav-menu-item">
+            <button type="button" onclick="href_scroll('#BLOG')">Blog</button>
+          </li>
+          <li class="nav-menu-item">
+            <button type="button" onclick="href_scroll('#CONTACTUS')">Contact us</button>
+          </li>
         </ul>
       </div>
 
-      <button class="nav-scroll-button" type="button">
-        <a href="#">
+      <button class="nav-scroll-button" type="button" onclick="href_scroll('#BANNER')">
+       
           <i class="fas fa-caret-up fa-4x"></i>
-        </a>
+       
       </button>
     </nav>
 
     <section class="content-container">
-      <article class="banner">
+      <article class="banner" id="BANNER">
         <img
           class="banner-img banner-first"
           src="./uploads/banner-01.jpg"
@@ -51,19 +63,23 @@
 
         <ul class="banner-text">
           <li>
-            <a href="#">WEB DEVELOPER</a>
+            <a class="banner-text-item" href="#">WEB&nbspDEVELOPER</a>
+            <a class="banner-text-opacity" href="#">WEB&nbspDEVELOPER</a>
             <span class="banner-text-underline"></span>
           </li>
           <li>
-            <a href="#">GRAPHIC DESIGN</a>
+            <a class="banner-text-item" href="#">GRAPHIC&nbspDESIGN</a>
+            <a class="banner-text-opacity" href="#">GRAPHIC&nbspDESIGN</a>
             <span class="banner-text-underline"></span>
           </li>
           <li>
-            <a href="#">CREATIVE DESIGN</a>
+            <a class="banner-text-item" href="#">CREATIVE&nbspDESIGN</a>
+            <a class="banner-text-opacity" href="#">CREATIVE&nbspDESIGN</a>
             <span class="banner-text-underline"></span>
           </li>
           <li>
-            <a href="#">WEB DESIGN</a>
+            <a class="banner-text-item" href="#">WEB&nbspDESIGN</a>
+            <a class="banner-text-opacity" href="#">WEB&nbspDESIGN</a>
             <span class="banner-text-underline"></span>
           </li>
         </ul>
@@ -574,6 +590,7 @@
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/portfolio_button.js"></script>
     <script type="text/javascript" src="js/banner_change.js"></script>
+    <script type="text/javascript" src="js/href_scroll.js"></script>
   </body>
 </html>
 
