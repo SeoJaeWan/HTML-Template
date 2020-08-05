@@ -174,23 +174,24 @@ article:nth-child(2n) {
 
 .nav-menu {
   margin-left: auto;
-  text-transform: uppercase;
 }
 
 .nav-menu-item {
   display: inline-block;
 }
 
-.nav-menu-item a {
+.nav-menu-item button {
   display: inline-block;
 
   font-size: 14px;
   padding: 10px 8px;
   color: #575089;
   letter-spacing: 1px;
+
+  text-transform: uppercase;
 }
 
-.nav-menu-item:hover a {
+.nav-menu-item:hover button {
   background-color: #241c65;
   color: #fff;
 
@@ -201,6 +202,8 @@ article:nth-child(2n) {
 .nav-scroll-button {
   position: fixed;
 
+  opacity: 0;
+
   bottom: 40px;
   right: 40px;
 
@@ -210,6 +213,8 @@ article:nth-child(2n) {
   background-color: #000;
 
   border-radius: 5px;
+
+  transition: all 1s;
 }
 
 .nav-scroll-button:hover {
@@ -223,7 +228,7 @@ article:nth-child(2n) {
 
 /* 
   /////////////////////////////////////////////
-      Home
+      Banner
   /////////////////////////////////////////////
 */
 
@@ -263,12 +268,17 @@ article:nth-child(2n) {
   transition: all 1s;
 }
 
-.banner-text li {
+.banner-text-item {
   position: relative;
-  margin: 0 30px;
+  margin: 0 25px;
 }
 
-.banner-text .banner-text-underline {
+.banner-text-item a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.banner-text-underline {
   position: absolute;
 
   width: 100%;
@@ -281,20 +291,9 @@ article:nth-child(2n) {
   transform: scale(0);
 }
 
-.banner-text-item,
 .banner-text-opacity {
-  color: #fff;
-  font-size: 18px;
-}
-
-.banner-text-opacity {
-  opacity: 1;
-
   position: absolute;
 
-  display: inline-block;
-
-  top: -1;
   left: 0;
 
   width: 0px;
@@ -869,8 +868,6 @@ button.hover-animation {
 .content-box {
   margin: 0 auto;
   width: 65%;
-
-  overflow: hidden;
 }
 
 .article-title {
@@ -904,4 +901,8 @@ button.hover-animation {
 
 .change-width {
   width: 100%;
+}
+
+.change-scale {
+  transform: scale(1);
 }
