@@ -11,7 +11,7 @@ function portfolio_toggle(number) {
   if (toggle) {
     portfolio_view_img.src = "./uploads/gallery_img-0" + number + ".jpg";
     console.log(portfolio_view.children);
-
+    portfolio_view.children[0].focus();
     portfolio_view.style = "display:flex";
 
     setTimeout(function () {
