@@ -9,6 +9,10 @@ var banner_text_opacity = document.querySelectorAll(".banner-text-opacity");
 var banner_text = document.querySelectorAll(".banner-text-item a");
 
 function banner_change() {
+  banner_text_underline[0].classList.add("change-scale");
+  banner_text[0].classList.add("half-active");
+  banner_text_opacity[0].classList.add("change-width");
+
   setInterval(function () {
     state++;
     if (state === 4) {
