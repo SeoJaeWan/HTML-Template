@@ -43,4 +43,7 @@ function banner_change() {
   }, 10000);
 }
 banner_text_box.style.transform = "translate(-50%, -50px)";
-banner_change();
+
+setTimeout(function() {
+    banner_change();
+},1000)

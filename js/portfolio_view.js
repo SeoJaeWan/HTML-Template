@@ -2,11 +2,6 @@ var portfolio_view = document.querySelector(".portfolio-view");
 var portfolio_view_img = document.getElementById("portfolio_view_img");
 var toggle = true;
 
-setInterval(function () {
-  focusEle = document.activeElement;
-  console.log(focusEle);
-}, 1000);
-
 function portfolio_toggle(number) {
   if (toggle) {
     portfolio_view_img.src = "./uploads/gallery_img-0" + number + ".jpg";
