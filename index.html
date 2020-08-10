@@ -17,13 +17,13 @@
         <a href="#" class="nav-logo">
           <img src="./images/logo.png" alt="logo" />
         </a>
-        
-        <button type = "button" class = "nav-menu-button" onclick="showMenu()">
-            Menu
-            
-            <i class="fas fa-bars"></i>
+
+        <button type="button" class="nav-menu-button" onclick="showMenu()">
+          Menu
+
+          <i class="fas fa-bars"></i>
         </button>
-        
+
         <ul class="nav-menu">
           <li class="nav-menu-item">
             <button type="button" onclick="href_scroll('#BANNER')">Home</button>
@@ -70,20 +70,34 @@
 
     <section class="content-container">
       <article class="banner" id="BANNER">
-        <img
-          class="banner-img banner-first"
-          src="./uploads/banner-01.jpg"
-          alt="banner-01"
-        />
-        <img class="banner-img" src="./uploads/banner-02.jpg" alt="banner-02" />
-        <img class="banner-img" src="./uploads/banner-03.jpg" alt="banner-03" />
-        <img class="banner-img" src="./uploads/banner-04.jpg" alt="banner-04" />
+        <div class="banner-imgs">
+          <img
+            class="banner-img-item banner-first"
+            src="./uploads/banner-01.jpg"
+            alt="banner-01"
+          />
+          <img
+            class="banner-img-item"
+            src="./uploads/banner-02.jpg"
+            alt="banner-02"
+          />
+          <img
+            class="banner-img-item"
+            src="./uploads/banner-03.jpg"
+            alt="banner-03"
+          />
+          <img
+            class="banner-img-item"
+            src="./uploads/banner-04.jpg"
+            alt="banner-04"
+          />
+        </div>
 
         <ul class="banner-text">
           <li class="banner-text-item">
             <a href="#">WEB&nbspDEVELOPER</a>
             <a class="banner-text-opacity" href="#">WEB&nbspDEVELOPER</a>
-            <span class="banner-text-underline "></span>
+            <span class="banner-text-underline"></span>
           </li>
 
           <li class="banner-text-item">
@@ -108,13 +122,12 @@
 
       <article id="ABOUTUS">
         <div class="content-box about">
-         
-                   <div class="about-img">
+          <div class="about-img">
             <div class="about-back"></div>
             <div class="about-front"></div>
             <img src="./uploads/about_04.jpg" alt="about_04" />
           </div>
-         
+
           <div class="about-message">
             <h2 class="sub-title">About Jimmy.</h2>
             <p>
@@ -315,10 +328,7 @@
                     src="./uploads/gallery_img-06.jpg"
                     alt="portfolio_view"
                   />
-                  <button
-                    type="button"
-                    class="portfolio-view-close"
-                  ></button>
+                  <button type="button" class="portfolio-view-close"></button>
                 </div>
               </div>
             </div>
@@ -629,7 +639,7 @@
     <script type="text/javascript" src="js/banner_change.js"></script>
     <script type="text/javascript" src="js/href_scroll.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
-        <script type="text/javascript" src="js/nav_button.js"></script>
+    <script type="text/javascript" src="js/nav_button.js"></script>
   </body>
 </html>
 

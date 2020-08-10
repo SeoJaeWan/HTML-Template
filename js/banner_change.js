@@ -1,6 +1,6 @@
 var state = 0;
 var before_state = 0;
-var banner = document.querySelectorAll(".banner-img");
+var banner = document.querySelectorAll(".banner-img-item");
 var banner_text_box = document.querySelector(".banner-text");
 var banner_text_underline = document.querySelectorAll(
   ".banner-text .banner-text-underline"
@@ -44,6 +44,6 @@ function banner_change() {
 }
 banner_text_box.style.transform = "translate(-50%, -50px)";
 
-setTimeout(function() {
-    banner_change();
-},1000)
+setTimeout(function () {
+  banner_change();
+}, 1000);
