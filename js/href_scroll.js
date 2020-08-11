@@ -1,16 +1,18 @@
 var scrollEle = document.documentElement || window.scrollingElement;
 
-var href_scroll = function (target, duration) {
+var href_scroll = function (target) {
+  console.log(target);
   var targetEle = document.querySelector(target);
   if (!targetEle) return;
 
   var currentY = scrollEle.scrollTop;
-  var targetY = targetEle.offsetTop;
+  var targetY = targetEle.offsetTop + 15;
 
-  animateScrollTo(currentY, targetY, duration);
+  console.log(targetY);
+  animateScrollTo(currentY, targetY);
 
-  function animateScrollTo(startY, endY, duration) {
-    var duration = duration ? duration : 600;
+  function animateScrollTo(startY, endY) {
+    var duration = 600;
     var unitY = (endY - startY) / duration;
     var startTime = new Date().getTime();
     var endTime = new Date().getTime() + duration;

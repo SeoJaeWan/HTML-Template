@@ -196,15 +196,6 @@ article:nth-child(2n) {
 
 .nav-menu-item {
   display: inline-block;
-}
-
-.nav-active {
-  background-color: #241c65;
-  color: #fff;
-}
-
-.nav-menu-item button {
-  display: inline-block;
 
   font-size: 14px;
   padding: 10px 8px;
@@ -212,6 +203,8 @@ article:nth-child(2n) {
   letter-spacing: 1px;
 
   text-transform: uppercase;
+
+  transition: all 1s;
 }
 
 .nav-menu-item:hover button {
@@ -220,6 +213,11 @@ article:nth-child(2n) {
 
   animation-name: navEvent;
   animation-duration: 0.3s;
+}
+
+.nav-active {
+  background-color: #241c65;
+  color: #fff;
 }
 
 .nav-scroll-button {

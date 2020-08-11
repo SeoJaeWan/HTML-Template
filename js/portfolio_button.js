@@ -1,6 +1,7 @@
 // 2020 07 30 서재완
 // 포트폴리오 버튼 구현
 
+var portfolio_content = document.querySelector(".portfolio-content"); // 포트폴리오 틀
 var portfolio_box = document.querySelector(".portfolio-box"); // 포트폴리오 틀
 var portfolio = document.querySelectorAll(".portfolio-item"); // 포트폴리오
 
@@ -57,10 +58,20 @@ function showPortfolio(type) {
     }
   }
 
-  if (window.innerWidth >= 768) height = Math.floor((abled - 1) / 3) + 1;
-  else height = abled;
+  if (window.innerWidth >= 768) {
+    height = Math.floor((abled - 1) / 3) + 1;
+    height_value = document.querySelector(".portfolio-content").offsetWidth / 4;
+  } else {
+    height = abled;
+    height_value = portfolio[0].offsetHeight + 20;
+  }
 
-  portfolio_box.setAttribute("style", "height : " + height * 350 + "px;");
+  console.log(height_value, portfolio[0].offsetHeight);
+
+  portfolio_box.setAttribute(
+    "style",
+    "height : " + height * height_value + "px;"
+  );
 }
 
 showPortfolio("all");
