@@ -180,6 +180,8 @@ article:nth-child(2n) {
   margin-left: auto;
 
   transition: all 1s;
+
+  max-height: 38px;
 }
 
 .nav-menu-button {
@@ -611,6 +613,7 @@ button.hover-animation {
 
   text-align: right;
 
+  opacity: 0;
   transform: scale(0.1);
 
   transition: all 0.75s;
@@ -1021,6 +1024,7 @@ button.hover-animation {
     left: 0;
 
     height: 0;
+    max-height: 315px;
 
     padding: 0 20px;
 

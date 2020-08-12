@@ -17,8 +17,15 @@ function scrollEvent() {
   }
 
   if (documentY > 200)
-    scroll_button.style = "opacity : 1; transform: translateY(-10px)";
-  else scroll_button.style = "opacity : 0; transform: translateY(10px)";
+    scroll_button.setAttribute(
+      "style",
+      "opacity : 1; transform: translateY(-10px)"
+    );
+  else
+    scroll_button.setAttribute(
+      "style",
+      "opacity : 0; transform: translateY(10px)"
+    );
 }
 
 function getCurrentArticle(documentY) {
