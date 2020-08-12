@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jimmy</title>
+    <link rel="icon" type="image⁄x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./css/style.css" />
     <script
       src="https://kit.fontawesome.com/121e4dcf8f.js"
@@ -12,15 +13,17 @@
   </head>
 
   <body>
-    <nav class="nav-container">
-      <div class="nav-box">
+    <!-- Header & Nav -->
+    <header class="header-container">
+      <h1>
         <a href="#" class="nav-logo">
           <img src="./images/logo.png" alt="logo" />
         </a>
+      </h1>
 
+      <nav class="nav-box">
         <button type="button" class="nav-menu-button" onclick="showMenu()">
           Menu
-
           <i class="fas fa-bars"></i>
         </button>
 
@@ -89,18 +92,20 @@
             </button>
           </li>
         </ul>
-      </div>
 
-      <button
-        class="nav-scroll-button"
-        type="button"
-        onclick="href_scroll('#BANNER')"
-      >
-        <i class="fas fa-caret-up fa-4x"></i>
-      </button>
-    </nav>
+        <button
+          class="nav-scroll-button"
+          type="button"
+          onclick="href_scroll('#BANNER')"
+        >
+          <i class="fas fa-caret-up fa-4x"></i>
+        </button>
+      </nav>
+    </header>
 
+    <!-- Section -->
     <section class="content-container">
+      <!-- Banner -->
       <article class="banner" id="BANNER">
         <div class="banner-imgs">
           <img
@@ -152,6 +157,7 @@
         </ul>
       </article>
 
+      <!-- About -->
       <article id="ABOUTUS">
         <div class="content-box about">
           <div class="about-img">
@@ -184,6 +190,7 @@
         </div>
       </article>
 
+      <!-- Services -->
       <article id="SERVICES" class="services">
         <div class="content-box">
           <div class="article-title">
@@ -252,6 +259,7 @@
         </div>
       </article>
 
+      <!-- Portfolio -->
       <article id="PORTFOLIO">
         <div class="content-box">
           <div class="article-title">
@@ -368,6 +376,7 @@
         </div>
       </article>
 
+      <!-- Testimonials -->
       <article id="TESTIMONIALS">
         <div class="content-box">
           <div class="article-title">
@@ -391,10 +400,10 @@
               </h3>
 
               <div class="testimonials-profile-content">
-                <blockquote>
+                <strong>
                   <i class="fas fa-quote-left fa-1x"></i>
                   Great &amp; Talented Team!
-                </blockquote>
+                </strong>
                 <p>
                   The master-builder of human happines no one rejects, dislikes
                   avoids pleasure itself, because it is very pursue pleasure.
@@ -414,10 +423,10 @@
               </h3>
 
               <div class="testimonials-profile-content">
-                <blockquote>
+                <strong>
                   <i class="fas fa-quote-left fa-1x"></i>
                   Wonderful Support!
-                </blockquote>
+                </strong>
                 <p>
                   They have got my project on time with the competition with a
                   sed highly skilled, and experienced &amp; professional team.
@@ -437,10 +446,10 @@
               </h3>
 
               <div class="testimonials-profile-content">
-                <blockquote>
+                <strong>
                   <i class="fas fa-quote-left fa-1x"></i>
                   Awesome Services!
-                </blockquote>
+                </strong>
                 <p>
                   Explain to you how all this mistaken idea of denouncing
                   pleasure and praising pain was born and I will give you
@@ -461,10 +470,10 @@
               </h3>
 
               <div class="testimonials-profile-content">
-                <blockquote>
+                <strong>
                   <i class="fas fa-quote-left fa-1x"></i>
                   Great &amp; Talented Team!
-                </blockquote>
+                </strong>
                 <p>
                   The master-builder of human happines no one rejects, dislikes
                   avoids pleasure itself, because it is very pursue pleasure.
@@ -484,10 +493,10 @@
               </h3>
 
               <div class="testimonials-profile-content">
-                <blockquote>
+                <strong>
                   <i class="fas fa-quote-left fa-1x"></i>
                   Wonderful Support!
-                </blockquote>
+                </strong>
                 <p>
                   They have got my project on time with the competition with a
                   sed highly skilled, and experienced &amp; professional team.
@@ -515,6 +524,7 @@
         </nav>
       </article>
 
+      <!-- Blog -->
       <article id="BLOG">
         <div class="content-box">
           <div class="article-title">
@@ -596,6 +606,7 @@
         </div>
       </article>
 
+      <!-- Contactus -->
       <article id="CONTACTUS" class="contact">
         <div class="content-box">
           <div class="article-title contact-title">
@@ -639,6 +650,7 @@
       </article>
     </section>
 
+    <!-- Footer -->
     <footer class="footer-copyright">
       <ul class="copyright-link">
         <li class="copyright-link-item">

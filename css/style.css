@@ -140,11 +140,15 @@ article:nth-child(2n) {
   /////////////////////////////////////////////
 */
 
-.nav-container {
+.header-container {
   position: fixed;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
 
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 12px 13%;
 
   z-index: 4;
 
@@ -152,12 +156,9 @@ article:nth-child(2n) {
 }
 
 .nav-box {
-  width: 63%;
+  width: 50%;
 
   display: flex;
-
-  margin: 0 auto;
-  padding: 0 15px;
 
   background-color: #ffffff;
 
@@ -602,8 +603,8 @@ button.hover-animation {
 }
 
 .portfolio-view-item {
-  width: 950px;
-  height: 755px;
+  width: 60%;
+  height: auto;
   padding: 20px;
 
   background-color: #fff;
@@ -703,7 +704,7 @@ button.hover-animation {
   text-align: center;
 }
 
-.testimonials-profile-content > blockquote {
+.testimonials-profile-content > strong {
   font-size: 20px;
   font-weight: bolder;
 
@@ -1000,10 +1001,14 @@ button.hover-animation {
 */
 
 @media screen and (max-width: 1024px) {
-  .nav-box {
-    width: 100%;
-
+  .header-container {
+    padding: 12px 15px;
     justify-content: space-between;
+  }
+
+  .nav-box {
+    justify-content: flex-end;
+    width: 100%;
 
     margin: 0;
     padding: 0;
@@ -1012,10 +1017,12 @@ button.hover-animation {
   .nav-menu {
     position: absolute;
     width: 100%;
-    top: 68px;
+    top: 67px;
     left: 0;
 
     height: 0;
+
+    padding: 0 20px;
 
     overflow: hidden;
 
@@ -1024,19 +1031,16 @@ button.hover-animation {
 
   .nav-menu-item {
     display: block;
+    width: 100%;
+    text-align: left;
   }
 
   .nav-menu-item > button {
-    width: 100%;
-    display: block;
-
-    text-align: left;
-
     padding: 15px 20px;
   }
 
   .nav-menu-button {
-    display: block;
+    display: inline-block;
   }
 
   .content-box {
