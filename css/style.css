@@ -847,7 +847,6 @@ button.hover-animation {
 
 .contact-title > h2 {
   color: #fff;
-  font-weight: bold;
 }
 
 .contact-form {
@@ -974,6 +973,8 @@ button.hover-animation {
 .sub-title {
   font-size: 38px;
   padding-bottom: 25px;
+
+  font-weight: 600;
 }
 
 .flex {
