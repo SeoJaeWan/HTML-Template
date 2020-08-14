@@ -6,7 +6,7 @@ var toggle = true;
 function portfolio_toggle(number) {
   // 이미지를 화면에 확장시켜 출력
   if (toggle) {
-    portfolio_view_img.src = "./uploads/gallery_img-0" + number + ".jpg";
+    portfolio_view_img.src = "./assets/uploads/gallery_img-0" + number + ".jpg";
     console.log(portfolio_view.children);
 
     portfolio_view.style.display = "flex";

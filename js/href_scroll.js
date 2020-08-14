@@ -1,9 +1,11 @@
 // Nav 버튼을 누를 경우 스크롤 이동 Javascript
 var scrollEle = document.documentElement; // 전체 페이지의 위치 추출을 위한 변수
-
+var menu = document.querySelector(".nav-menu");
 var href_scroll = function (target) {
   var targetEle = document.querySelector(target); // 목표 Element
   if (!targetEle) return;
+
+  if (scrollEle.offsetWidth <= 1024) menu.style.height = "0px";
 
   var currentY = scrollEle.scrollTop; // 현재 Y축
   var targetY = targetEle.offsetTop; // 목표 Y축

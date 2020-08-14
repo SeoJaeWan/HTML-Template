@@ -2,18 +2,19 @@
   font-family: "Lustria";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/lustria-v7-latin-regular.eot");
+  src: url("../assets/fonts/lustria-v7-latin-regular.eot");
   /* IE9 Compat Modes */
   src: local("Lustria"), local("Lustria-Regular"),
-    url("../fonts/lustria-v7-latin-regular.eot?#iefix")
+    url("../assets/fonts/lustria-v7-latin-regular.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lustria-v7-latin-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lustria-v7-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lustria-v7-latin-regular.ttf")
+    /* IE6-IE8 */ url("../assets/fonts/lustria-v7-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../assets/fonts/lustria-v7-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../assets/fonts/lustria-v7-latin-regular.ttf")
       format("truetype"),
     /* Safari, Android, iOS */
-      url("../fonts/lustria-v7-latin-regular.svg#Lustria") format("svg");
+      url("../assets/fonts/lustria-v7-latin-regular.svg#Lustria") format("svg");
   /* Legacy iOS */
 }
 
@@ -109,7 +110,7 @@ ol {
 }
 
 li {
-  display: inline;
+  display: inline-block;
 }
 
 button {
@@ -210,7 +211,7 @@ article:nth-child(2n) {
   transition: all 1s;
 }
 
-.nav-menu-item:hover button {
+.nav-menu > li:hover .nav-menu-item {
   background-color: #241c65;
   color: #fff;
 
@@ -646,7 +647,7 @@ button.hover-animation {
 
   margin-top: 8px;
 
-  background: url(../images/prettyPhoto/light_square/sprite.png) -1px -1px
+  background: url(../assets/images/prettyPhoto/light_square/sprite.png) -1px -1px
     no-repeat;
 }
 
@@ -852,7 +853,7 @@ button.hover-animation {
 */
 
 .contact {
-  background-image: url(../images/bg.jpg), url(../images/bg.png);
+  background-image: url(../assets/images/bg.jpg), url(../assets/images/bg.png);
 }
 
 .contact-title > p {
@@ -1007,6 +1008,10 @@ button.hover-animation {
 */
 
 @media screen and (max-width: 1024px) {
+  li {
+    display: inline;
+  }
+
   .header-container {
     padding: 12px 15px;
     justify-content: space-between;
