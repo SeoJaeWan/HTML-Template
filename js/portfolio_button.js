@@ -16,10 +16,6 @@ function showPortfolio(type) {
   var height; // 포트폴리오 틀 height
   var height_value;
 
-  // 반응형은 width를 이용할 예정 1024 768 0
-
-  console.log(window.innerWidth);
-
   for (var i = 0; i < portfolio.length; i++) {
     var portfolio_class = [];
 

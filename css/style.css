@@ -315,17 +315,16 @@ article:nth-child(2n) {
 
   width: 100%;
 
+  opacity: 0;
   bottom: 0;
   left: 0;
   border-bottom: solid 2px #fff;
 
   transition: all 2s;
-  transform: scale(0);
+  transform: scaleX(0);
 }
 
 .banner-text-opacity {
-  opacity: 1;
-
   position: absolute;
 
   display: inline-block;
@@ -340,9 +339,24 @@ article:nth-child(2n) {
   transition: all 7s;
 }
 
+.banner-active > a {
+  opacity: 0.5;
+}
+
+.banner-active > .banner-text-opacity {
+  opacity: 1;
+
+  width: 100%;
+}
+
+.banner-active > .banner-text-underline {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
 .banner-first {
   animation-name: showFirst;
-  animation-duration: 1s;
+  animation-duration: 3s;
   transform: translate(-50%, 0px);
 }
 
@@ -986,18 +1000,6 @@ button.hover-animation {
 
 .active {
   opacity: 1;
-}
-
-.half-active {
-  opacity: 0.5;
-}
-
-.change-width {
-  width: 100%;
-}
-
-.change-scale {
-  transform: scale(1);
 }
 
 /*

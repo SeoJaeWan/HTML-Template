@@ -1,18 +1,17 @@
-var state = 0;
-var before_state = 0;
-var banner = document.querySelectorAll(".banner-img-item");
-var banner_text_box = document.querySelector(".banner-text");
-var banner_text_underline = document.querySelectorAll(
-  ".banner-text .banner-text-underline"
-);
-var banner_text_opacity = document.querySelectorAll(".banner-text-opacity");
-var banner_text = document.querySelectorAll(".banner-text-item a");
+var state = 0; // 현재 화면에 나오는 배너
+var before_state = 0; // 이전 배너
+var banner = document.querySelectorAll(".banner-img-item"); // 배너 이미지
+var banner_text_box = document.querySelector(".banner-text"); // 배너 텍스트 박스
+var banner_text = document.querySelectorAll(".banner-text-item"); // 텍스트 박스 안 Ele
+
+function delay_text(state) {
+  setTimeout(function () {
+    banner_text[state].classList.add("banner-active");
+  }, 3000);
+}
 
 function banner_change() {
-  banner_text_underline[0].classList.add("change-scale");
-  banner_text[0].classList.add("half-active");
-  banner_text_opacity[0].classList.add("change-width");
-
+  delay_text(0);
   setInterval(function () {
     state++;
     if (state === 4) {
@@ -25,25 +24,13 @@ function banner_change() {
     banner[before_state].classList.add("banner-disabled");
     banner[state].classList.add("banner-abled");
 
-    banner_text_underline[before_state].classList.remove("change-scale");
-    banner_text[before_state * 2].classList.remove("half-active");
-    banner_text_opacity[before_state].classList.remove("change-width");
+    banner_text[before_state].classList.remove("banner-active");
 
     before_state = state;
 
-    setTimeout(function () {
-      banner_text[state * 2].classList.add("half-active");
-      banner_text_opacity[state].classList.add("change-width");
-
-      banner_text_underline[state].classList.add("change-scale");
-
-      console.log(state, before_state);
-      console.log(banner_text[state * 2]);
-    }, 3000);
+    delay_text(state);
   }, 10000);
 }
 banner_text_box.style.transform = "translate(-50%, -50px)";
 
-setTimeout(function () {
-  banner_change();
-}, 1000);
+banner_change();
